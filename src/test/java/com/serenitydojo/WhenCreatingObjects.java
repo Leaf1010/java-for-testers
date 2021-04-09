@@ -29,6 +29,17 @@ public class WhenCreatingObjects {
     }
 
     @Test
+    public void creating_a_hampster() {
+
+        Hampster sammy = new Hampster("Sammy","Sudoku",2);
+
+        Assert.assertEquals(sammy.getName(),"Sammy");
+        Assert.assertEquals(sammy.getFavouriteGame(),"Sudoku");
+        Assert.assertEquals(sammy.getAge(),2);
+    }
+
+
+    @Test
     public void cat_makes_noise() {
         Cat felix = new Cat("Felix", 4);
         Cat spot = new Cat("Spot","Salmon", 3);

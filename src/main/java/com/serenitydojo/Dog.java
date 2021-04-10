@@ -8,6 +8,13 @@ public class Dog extends Pet {
         super(name);
         this.favoriteToy = favoriteToy;
         this.age = age;
+
+    }
+
+    @Override
+    public String play() {
+        return "plays Badminton";
+
     }
 
     public String getFavoriteToy() {
@@ -20,5 +27,6 @@ public class Dog extends Pet {
 
     public String makeNoise() {
         return "Woof";
+
     }
 }

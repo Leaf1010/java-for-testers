@@ -42,6 +42,13 @@ public class Cat extends Pet {
     @Override
     public String makeNoise() {
         return CAT_NOISE;
+
+    }
+
+    @Override
+    public String play() {
+        return "plays Chess";
+
     }
 
     public void feed(String food) {
